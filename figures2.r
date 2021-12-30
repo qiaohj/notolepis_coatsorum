@@ -33,7 +33,7 @@ lines_color<-c("Subantarctic Front"="#000000",
                "Subtropical Front"="#fdbf6f")
 lines_laea$linetype<-c(2, 1, 1, 1, 1, 1, 2, 2)
 
-#thr <- 0.206204
+
 thr<-0.2963542
 RCP_year<-list()
 a<-raster("/Users/menggeduan/Documents/考氏背鳞鱼/考氏/model25/future_RCP26_2050.tif")
