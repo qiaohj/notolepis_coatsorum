@@ -8,13 +8,12 @@ library(tidyverse)
 library(data.table)
 library(sdm)
 ####1.1已下载环境变量时使用
-env=stack(c("/Users/menggeduan/Documents/考氏背鳞鱼/相同分辨率环境因子/BO2_curvelmean_ss.tif",
-            '/Users/menggeduan/Documents/考氏背鳞鱼/相同分辨率环境因子/BO2_icethickmean_ss.tif',
-            '/Users/menggeduan/Documents/考氏背鳞鱼/相同分辨率环境因子/BO2_salinitymean_ss.tif',
-            '/Users/menggeduan/Documents/考氏背鳞鱼/相同分辨率环境因子/BO2_tempmean_ss.tif',
-            '/Users/menggeduan/Documents/考氏背鳞鱼/相同分辨率环境因子/gb_depth.tif',
-            '/Users/menggeduan/Documents/考氏背鳞鱼/相同分辨率环境因子/gb_land_distance.tif'))
-##study area
+env=stack(c("/Users/menggeduan/Documents/考氏整理/整理二/气候和地图/相同分辨率环境因子/BO2_curvelmean_ss.tif",
+            '/Users/menggeduan/Documents/考氏整理/整理二/气候和地图/相同分辨率环境因子/BO2_icethickmean_ss.tif',
+            '/Users/menggeduan/Documents/考氏整理/整理二/气候和地图/相同分辨率环境因子/BO2_salinitymean_ss.tif',
+            '/Users/menggeduan/Documents/考氏整理/整理二/气候和地图/相同分辨率环境因子/BO2_tempmean_ss.tif',
+            '/Users/menggeduan/Documents/考氏整理/整理二/气候和地图/相同分辨率环境因子/gb_depth.tif',
+            '/Users/menggeduan/Documents/考氏整理/整理二/气候和地图/相同分辨率环境因子/gb_land_distance.tif'))
 antarctica <- raster::crop(env, extent(-180, 180, -90, -35))
 
 #2. Species occurrence records
